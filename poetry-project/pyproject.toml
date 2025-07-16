@@ -1,5 +1,5 @@
 [project]
-name = "onboarding-laura-montes"
+name = "poetry-project"
 version = "0.1.0"
 description = "Poetry onboarding project"
 license = "MIT"
@@ -12,6 +12,9 @@ repository = "https://github.com/lauramontes-mutt/onboarding-laura-montes.git"
 keywords = ["poetry", "hypermodern"]
 requires-python = ">=3.7"
 dependencies = [
+]
+packages = [
+    { include = "poetry_project", from = "src" }
 ]
 
 
