@@ -10,8 +10,9 @@ readme = "README.md"
 homepage = "https://github.com/lauramontes-mutt/onboarding-laura-montes.git"
 repository = "https://github.com/lauramontes-mutt/onboarding-laura-montes.git"
 keywords = ["poetry", "hypermodern"]
-requires-python = ">=3.7"
+requires-python = ">=3.10"
 dependencies = [
+    "click (>=8.2.1,<9.0.0)"
 ]
 packages = [
     { include = "poetry_project", from = "src" }
