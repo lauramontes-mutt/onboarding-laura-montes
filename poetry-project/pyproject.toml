@@ -18,6 +18,8 @@ packages = [
     { include = "poetry_project", from = "src" }
 ]
 
+[tool.poetry.scripts]
+poetry-project = "poetry_project.console:main"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
