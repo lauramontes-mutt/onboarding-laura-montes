@@ -1,0 +1,20 @@
+[project]
+name = "onboarding-laura-montes"
+version = "0.1.0"
+description = "Poetry onboarding project"
+license = "MIT"
+authors = [
+    {name = "Laura Montes",email = "laura.montes@muttdata.ai"}
+]
+readme = "README.md"
+homepage = "https://github.com/lauramontes-mutt/onboarding-laura-montes.git"
+repository = "https://github.com/lauramontes-mutt/onboarding-laura-montes.git"
+keywords = ["poetry", "hypermodern"]
+requires-python = ">=3.7"
+dependencies = [
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
