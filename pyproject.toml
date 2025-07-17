@@ -1,5 +1,5 @@
 [project]
-name = "poetry-project"
+name = "onboarding-laura-montes"
 version = "0.1.0"
 description = "Poetry onboarding project"
 license = "MIT"
@@ -13,14 +13,15 @@ keywords = ["poetry", "hypermodern"]
 requires-python = ">=3.10"
 dependencies = [
     "click (>=8.2.1,<9.0.0)",
-    "requests (>=2.32.4,<3.0.0)"
+    "requests (>=2.32.4,<3.0.0)",
+    "pre-commit (>=4.2.0,<5.0.0)"
 ]
 packages = [
-    { include = "poetry_project", from = "src" }
+    { include = "onboarding_laura_montes", from = "src" }
 ]
 
 [tool.poetry.scripts]
-poetry-project = "poetry_project.console:main"
+onboarding-laura-montes = "onboarding_laura_montes.console:main"
 
 [tool.poetry.group.dev.dependencies]
 black = "^25.1.0"

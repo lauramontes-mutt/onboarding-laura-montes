@@ -14,10 +14,8 @@ repos:
       language: system
       types: [python]
       args: [--skip-string-normalization]
-      exclude: docs/*
     - id: pylint
       name: pylint
       entry: poetry run pylint
       language: system
       types: [python]
-      exclude: (docs/|muttlib/dbconn/|tests/)
