@@ -12,7 +12,8 @@ repository = "https://github.com/lauramontes-mutt/onboarding-laura-montes.git"
 keywords = ["poetry", "hypermodern"]
 requires-python = ">=3.10"
 dependencies = [
-    "click (>=8.2.1,<9.0.0)"
+    "click (>=8.2.1,<9.0.0)",
+    "requests (>=2.32.4,<3.0.0)"
 ]
 packages = [
     { include = "poetry_project", from = "src" }
@@ -21,6 +22,17 @@ packages = [
 [tool.poetry.scripts]
 poetry-project = "poetry_project.console:main"
 
+[tool.poetry.group.dev.dependencies]
+black = "^25.1.0"
+pylint = "^3.3.7"
+pre-commit = "^4.2.0"
+
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 88
+skip-string-normalization = false
+multi_line_output = 3
+workers = 1
